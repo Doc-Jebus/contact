@@ -7,18 +7,18 @@
 </head>
 <body>
   <!-- Contact Page Container-->
-  <div class="flex flex-col bg-darkBlue md:flex-row md:h-screen" id="main-container">
+  <div class="flex flex-col md:flex-row md:h-screen" id="main-container">
 
     <!-- Logo and Image -->
-    <div class="ml-32 w-2/3 md:bg-no-repeat md:bg-cover md:bg-center" style="background-image: url(../images/contact-page.jpg)" id="logo-container-left">
-      <h1 class="text-5xl font-bold underline m-10 text-brightRed hover:text-veryPaleRed hover:cursor-pointer">
+    <div class="w-2/3 md:bg-no-repeat md:bg-cover md:bg-center" style="background-image: url(../images/olena-sergienko-unsplash.jpg)" id="logo-container-left">
+      <h1 class="text-5xl font-bold underline m-10 text-white hover:text-veryPaleRed hover:cursor-pointer">
         Hello world!
       </h1>
     </div>
 
 
     <!-- Form Container -->
-    <div class="p-32 mr-32 bg-white" id="form-container-right">
+    <div class="p-32 bg-veryLightGray" id="form-container-right">
 
 
       <!-- Intro Text -->
@@ -31,30 +31,33 @@
       <div class="" id="form-details">
         <form action="#" method="post">
 
-          <div id="info-items">
-
-            <label for="firstName">
+          <!-- First Name -->
+          <div class="my-3" id="info-items">
+            <label class="mr-4" for="firstName">
               First Name:
             </label>
             <input type="text" className="inputField" id="firstName" name="first-name" placeholder="First Name...">
 	        </div>
   
-	        <div id="info-items">
-            <label for="lastName">
+          <!-- Last Name -->
+	        <div class="my-3" id="info-items">
+            <label class="mr-4" for="lastName">
               Last Name:
             </label>
             <input type="text" className="inputField" id="lastName" name="last-name" placeholder="Last Name...">
           </div>
 	
-	        <div id="info-items">
-            <label for="email">
+          <!-- Email -->
+	        <div class="my-3" id="info-items">
+            <label class="mr-4" for="email">
               email address:
             </label>
             <input type="email" className="inputField" id="email" name="email" placeholder="you@example.com...">
 	        </div>
 
-	        <div id="info-items">
-	        	<label for="car">Choose your car model:</label>
+          <!-- Option -->
+	        <div class="my-3" id="info-items">
+	        	<label class="mr-4" for="car">Choose your car model:</label>
 	        	<select name="Car">
 	        		<optgroup label="Cars">
           			<option value="mercedes">Mercedes</option>
@@ -67,11 +70,9 @@
 	        	</select>
 	        </div>
 
-	        <textarea rows="20" cols="60" minlength="15" maxlength="300" placeholder="Explain your reason..."></textarea>
-
           <!-- Submit Button -->
           <div>
-	        <button class="w-8 h-4 border-solid border-veryDarkBlue" type="submit">Submit</button>
+	        <button class="my-8 w-60 h-14 font-bold rounded-lg text-white bg-sky-500 border-solid border-2 border-veryLightGray drop-shadow-2xl shadow-gray-600 hover:text-veryLightGray hover:border-cream hover:bg-sky-700 hover:shadow-md hover:shadow-black" type="submit">Create Account</button>
           </div>
 
         </form>
