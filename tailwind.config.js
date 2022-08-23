@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        brightRed : 'hsl(12, 88%, 59%)',
+        brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',
         brightRedSupLight: 'hsl(12, 88%, 95%)',
         cream: '#FCF8E8',
@@ -33,9 +33,12 @@ module.exports = {
         veryLightBlue: '#DFF6FF',
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
-    },
+      fontFamily: {
+        'saira': 'Saira Condensed',
+      },
   },
   plugins: [
     
   ],
+},
 }
