@@ -10,7 +10,12 @@
   <div class="flex flex-col md:flex-row md:h-screen" id="main-container">
 
     <!-- Logo and Image -->
-    <div class="w-2/3 md:bg-no-repeat md:bg-cover md:bg-center" style="background-image: url(../images/olena-sergienko-unsplash.jpg)" id="logo-container-left">
+    <div class="
+    
+    md:bg-no-repeat 
+    md:bg-cover 
+    md:bg-center" 
+    style="background-image: url(../images/olena-sergienko-unsplash.jpg)" id="logo-container-left">
       <h1 class="text-5xl font-bold underline m-10 text-white hover:text-veryPaleRed hover:cursor-pointer">
         Hello world!
       </h1>
@@ -18,7 +23,7 @@
 
 
     <!-- Form Container -->
-    <div class="p-32 bg-veryLightGray" id="form-container-right">
+    <div class="bg-gray-200" id="form-container-right">
 
 
       <!-- Intro Text -->
@@ -28,67 +33,270 @@
 
 
       <!-- Form Details -->
-      <div class="" id="form-details">
+      <div class="
+      flex
+      justify-center
+      align-middle
+      bg-white
+      max-w-6xl
+      " 
+      id="form-details">
         <form action="#" method="post">
 
           <!-- First & Last Name -->
-          <div class="flex flex-col md:flex-row md:my-3 " id="info-items">
-            <div class="mr-6">
+          <div class="flex flex-col md:flex-row md:my-3 font-saira" id="info-items">
+            <div class="relative m-6">
 
-              <label class="relative left-0 bottom-0 pointer-events-none w-full h-full font-saira text-2xl after:content-none after:absolute after:h-full after:w-full" for="firstName">
-                <span class="absolute w-full left-0 bottom-1 ease-in duration-300">
-                  First Name:
-                </span>
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              placeholder="FIRST NAME" type="text" className="inputField" id="firstName" name="first-name">
+
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="firstName">
+                  FIRST NAME:
               </label>
               
-                <input class="w-full h-full text-gray-500 pt-5 border-b-2 border-gray-500 after:border-b-4 focus:border-sky-600 focus:outline-none" type="text" className="inputField" id="firstName" name="first-name">
             </div>
 
-            <div>
-              <label class="mr-4 font-saira text-2xl" for="lastName">
-                Last Name:
+            <div class="relative m-6">
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              type="text" className="inputField" id="lastName" name="last-name" placeholder="LAST NAME">
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="lastName">
+                LAST NAME:
               </label>
-              <input type="text" className="inputField" id="lastName" name="last-name">
+
             </div>
           </div>
 
           <!-- Email & Username -->
           <div class="flex flex-col md:flex-row md:my-3">
-	          <div class="my-3 font-saira text-2xl" id="info-items">
-              <label class="mr-4" for="email">
-                email address:
+
+	          <div class="relative m-6 font-saira text-2xl" id="info-items">
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              type="email" className="inputField" id="email" name="email" placeholder="EMAIL">
+
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="email">
+                EMAIL:
               </label>
-              <input type="email" className="inputField" id="email" name="email" placeholder="you@example.com...">
+
 	          </div>
           
-	          <div class="my-3 font-saira text-2xl" id="info-items" >
-              <label class="mr-4" for="username">
-                username:
+	          <div class="relative m-6 font-saira text-2xl" id="info-items" >
+              
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              type="text" className="inputField" id="username"  name="username" placeholder="USERNAME">
+
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="username">
+                USERNAME:
               </label>
-              <input type="text" className="inputField" id="username"  name="username" placeholder="(4 character minimum)">
 	          </div>
           </div>
 
           <!-- Password & Confirm Password-->
           <div class="flex flex-col md:flex-row md:my-3">
-	          <div class="my-3 font-saira text-2xl" id="info-items">
-              <label class="mr-4" for="password">
-                Password:
+	          <div class="relative m-6 font-saira text-2xl" id="info-items">
+              
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              type="password" className="inputField" id="password" name="password" placeholder="PASSWORD">
+
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="password">
+                PASSWORD:
               </label>
-              <input type="password" className="inputField" id="password" name="password" placeholder="*******">
 	          </div>
 
 
-	          <div class="my-3 font-saira text-2xl" id="info-items">
-              <label class="mr-4" for="password-confirm">
-                Confirm password:
+	          <div class="relative m-6 font-saira text-2xl" id="info-items">
+              
+              <input class="
+              peer
+              w-96
+              py-1.5
+              text-gray-800 
+              text-2xl
+              border-b-2 
+              border-gray-500 
+              placeholder-transparent
+              after:border-b-4 
+              focus:border-sky-700 
+              focus:transition-colors 
+              focus:outline-none 
+              " 
+              type="password" className="inputField" id="password-confirm" name="password-confirm" placeholder="CONFIRM PASSWORD">
+
+              <label class="
+              absolute 
+              left-0 
+              -top-6 
+              pointer-events-none 
+              font-saira 
+              text-2xl
+              text-gray-600 
+              cursor-text 
+              peer-focus:text-xl 
+              peer-focus:-top-5 
+              peer-focus:text-sky-800 
+              peer-focus:font-bold 
+              peer-focus:ease-in 
+              peer-placeholder-shown:top-3
+              duration-200
+              " 
+              className="input-label" for="password-confirm">
+                CONFIRM PASSWORD:
               </label>
-              <input type="password" className="inputField" id="password-confirm" name="password-confirm" placeholder="*******">
+
 	          </div>
           </div>
 
           <!-- Option -->
-	        <div class="my-3" id="info-items">
+	        <div class="m-6" id="info-items">
 	        	<label class="mr-4" for="customer-connect">Where did you hear about us? (optional):</label>
 	        	<select name="customer-connect">
 	        		
@@ -104,7 +312,7 @@
 
           <!-- Submit Button -->
           <div>
-	        <button class="my-8 w-60 h-14 font-bold rounded-lg text-white bg-sky-500 border-solid border-2 border-veryLightGray drop-shadow-2xl shadow-gray-600 hover:text-veryLightGray hover:border-cream hover:bg-sky-700 hover:shadow-md hover:shadow-black" type="submit">Create Account</button>
+	        <button class="m-6 w-60 h-14 font-bold rounded-lg text-white bg-sky-500 border-solid border-2 border-veryLightGray drop-shadow-2xl shadow-gray-600 hover:text-veryLightGray hover:border-cream hover:bg-sky-700 hover:shadow-md hover:shadow-black" type="submit">Create Account</button>
           </div>
 
         </form>
@@ -115,5 +323,6 @@
 
   </div>
 
+  <script src="../src/app.js"></script>
 </body>
 </html>
