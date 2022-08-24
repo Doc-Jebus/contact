@@ -17,6 +17,7 @@
   md:flex
   md:flex-row
   md:h-screen
+  
   " 
   id="main-container">
 
@@ -151,87 +152,94 @@
 
           <!-- Email & Username -->
           <div class="flex flex-col md:flex-row md:my-3">
+            <div class="flex flex-row">
+	            <div class="relative m-4 font-saira text-2xl" id="info-items">
+                <input class="
+                peer
+                w-96
+                py-1.5
+                text-gray-800 
+                text-2xl
+                border-b-2 
+                border-gray-500 
+                placeholder-transparent
+                after:border-b-4 
+                focus:border-sky-700 
+                focus:transition-colors 
+                focus:outline-none 
+                " 
+                type="email" className="emailInput" id="email" name="email" placeholder="EMAIL">
 
-	          <div class="relative m-6 font-saira text-2xl" id="info-items">
-              <input class="
-              peer
-              w-96
-              py-1.5
-              text-gray-800 
-              text-2xl
-              border-b-2 
-              border-gray-500 
-              placeholder-transparent
-              after:border-b-4 
-              focus:border-sky-700 
-              focus:transition-colors 
-              focus:outline-none 
-              " 
-              type="email" className="emailInput" id="email" name="email" placeholder="EMAIL">
 
-              <label class="
-              absolute 
-              left-0 
-              -top-7 
-              pointer-events-none 
-              font-saira 
-              text-2xl
-              text-gray-600 
-              cursor-text 
-              peer-focus:text-xl 
-              peer-focus:-top-5 
-              peer-focus:text-sky-800 
-              peer-focus:font-bold 
-              peer-focus:ease-in 
-              peer-placeholder-shown:top-3
-              duration-200
-              " 
-              className="input-label" for="email">
-                EMAIL:
-              </label>
-              <p class="text-red-600" id="email-error"></p>
+                <label class="
+                absolute 
+                left-0 
+                -top-7 
+                pointer-events-none 
+                font-saira 
+                text-2xl
+                text-gray-600 
+                cursor-text 
+                peer-focus:text-xl 
+                peer-focus:-top-5 
+                peer-focus:text-sky-800 
+                peer-focus:font-bold 
+                peer-focus:ease-in 
+                peer-placeholder-shown:top-3
+                duration-200
+                " 
+                className="input-label" for="email">
+                  EMAIL:
+                </label>
+                <p class="text-red-600" id="email-error"></p>
+	            </div>
+              <!-- Confirmation Check -->
+              <p class="mt-8 -left-6 text-green-500 text-2xl font-bold" id="confirmation"></p>
+            </div>
 
-	          </div>
-          
-	          <div class="relative m-6 font-saira text-2xl" id="info-items" >
-              
-              <input class="
-              peer
-              w-96
-              py-1.5
-              text-gray-800 
-              text-2xl
-              border-b-2 
-              border-gray-500 
-              placeholder-transparent
-              after:border-b-4 
-              focus:border-sky-700 
-              focus:transition-colors 
-              focus:outline-none 
-              " 
-              type="text" className="inputField" id="username"  name="username" placeholder="USERNAME">
+            <div class="flex flex-row">
+	            <div class="relative m-4 font-saira text-2xl" id="info-items" >
 
-              <label class="
-              absolute 
-              left-0 
-              -top-7 
-              pointer-events-none 
-              font-saira 
-              text-2xl
-              text-gray-600 
-              cursor-text 
-              peer-focus:text-xl 
-              peer-focus:-top-5 
-              peer-focus:text-sky-800 
-              peer-focus:font-bold 
-              peer-focus:ease-in 
-              peer-placeholder-shown:top-3
-              duration-200
-              " 
-              className="input-label" for="username">
-                USERNAME:
-              </label>
-	          </div>
+                <input class="
+                peer
+                w-96
+                py-1.5
+                text-gray-800 
+                text-2xl
+                border-b-2 
+                border-gray-500 
+                placeholder-transparent
+                after:border-b-4 
+                focus:border-sky-700 
+                focus:transition-colors 
+                focus:outline-none 
+                " 
+                type="text" className="inputField" id="username"  name="username" placeholder="USERNAME">
+
+                <label class="
+                absolute 
+                left-0 
+                -top-7 
+                pointer-events-none 
+                font-saira 
+                text-2xl
+                text-gray-600 
+                cursor-text 
+                peer-focus:text-xl 
+                peer-focus:-top-5 
+                peer-focus:text-sky-800 
+                peer-focus:font-bold 
+                peer-focus:ease-in 
+                peer-placeholder-shown:top-3
+                duration-200
+                " 
+                className="input-label" for="username">
+                  USERNAME:
+                </label>
+	            </div>
+            </div>
+            <!-- Confirmation Check -->
+            <p class="mt-8 -left-6 text-green-500 text-2xl font-bold" id="confirmation"></p>
           </div>
 
           <!-- Password & Confirm Password-->
