@@ -1,6 +1,6 @@
 console.log("Hello World");
     const email = document.querySelector('#email');
-    const emailError = document.querySelector('.email-error');
+    const emailError = document.querySelector('#email-error');
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 let confirmation = "✓";

@@ -89,7 +89,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -128,7 +128,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -172,7 +172,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -189,7 +189,7 @@
               className="input-label" for="email">
                 EMAIL:
               </label>
-              <p class="text-red-600" className="email-error"></p>
+              <p class="text-red-600" id="email-error"></p>
 
 	          </div>
           
@@ -214,7 +214,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -257,7 +257,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -277,8 +277,14 @@
 	          </div>
 
 
-	          <div class="relative m-6 font-saira text-2xl" id="info-items">
-              
+	          <div class="
+              relative 
+              m-6 
+              font-saira 
+              text-2xl
+              " 
+              id="info-items">
+
               <input class="
               peer
               w-96
@@ -298,7 +304,7 @@
               <label class="
               absolute 
               left-0 
-              -top-6 
+              -top-7 
               pointer-events-none 
               font-saira 
               text-2xl
@@ -322,7 +328,11 @@
           <!-- Option -->
 	        <div class="flex m-6" id="info-items">
 	        	<label class="mr-4" for="customer-connect">Where did you hear about us? (optional):</label>
-	        	<select name="customer-connect">
+	        	<select class="
+              border-2 
+              border-gray-300
+              " 
+              name="customer-connect">
 	        		
           			<option value="mercedes">-Please select-</option>
           			<option value="tesla">Internet search</option>
@@ -336,7 +346,7 @@
 
           <!-- Submit Button -->
           <div>
-	        <button class="m-6 w-60 h-14 font-bold rounded-lg text-white bg-sky-500 border-solid border-2 border-veryLightGray drop-shadow-2xl shadow-gray-600 hover:text-veryLightGray hover:border-cream hover:bg-sky-700 hover:shadow-md hover:shadow-black" type="submit">Create Account</button>
+	        <button class="m-6 w-60 h-14 font-bold rounded-lg text-white bg-sky-500 border-solid border-2 border-veryLightGray shadow-md shadow-gray-400 hover:text-veryLightGray hover:border-cream hover:bg-sky-700 hover:shadow-md hover:shadow-gray-600" type="submit">Create Account</button>
           </div>
 
         </form>
