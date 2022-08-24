@@ -2,33 +2,58 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
+  <script src="../src/app.js" defer></script>
+  <title>Sign-up form</title>
 </head>
+
 <body>
   <!-- Contact Page Container-->
-  <div class="flex flex-col md:flex-row md:h-screen" id="main-container">
+  <div class="
+  flex 
+  flex-col
+  md:flex
+  md:flex-row
+  md:h-screen
+  " 
+  id="main-container">
 
     <!-- Logo and Image -->
     <div class="
-    
+    bg-signUpBgMobile
+    bg-no-repeat
+    bg-cover
+    bg-center
+    md:bg-signUpBg
     md:bg-no-repeat 
     md:bg-cover 
-    md:bg-center" 
-    style="background-image: url(../images/olena-sergienko-unsplash.jpg)" id="logo-container-left">
+    md:bg-center
+    " 
+     id="logo-container-left">
       <h1 class="text-5xl font-bold underline m-10 text-white hover:text-veryPaleRed hover:cursor-pointer">
-        Hello world!
+        ProTemp
       </h1>
     </div>
 
 
     <!-- Form Container -->
-    <div class="bg-gray-200" id="form-container-right">
+    <div class="flex flex-col bg-gray-200" id="form-container-right">
 
 
       <!-- Intro Text -->
-      <div id="text-explanation">
-        <p class="text-left m-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a earum doloribus, eveniet temporibus voluptatibus hic nisi ad dolores nulla ratione, debitis, voluptate illo. Optio corrupti odio veniam sapiente dolorem. Nobis a earum doloribus, eveniet temporibus voluptatibus hic nisi ad dolores nulla ratione, debitis, voluptate illo. Optio corrupti odio veniam sapiente dolorem.</p>
+      <div class="
+      md:p-12
+      md:m-14
+      "
+      id="text-explanation">
+        <p class="
+        text-left 
+        m-14
+        "
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a earum doloribus, eveniet temporibus voluptatibus hic nisi ad dolores nulla ratione, debitis, voluptate illo. Optio corrupti odio veniam sapiente dolorem. Nobis a earum doloribus, eveniet temporibus voluptatibus hic nisi ad dolores nulla ratione, debitis, voluptate illo. Optio corrupti odio veniam sapiente dolorem.
+      </p>
       </div>
 
 
@@ -36,9 +61,7 @@
       <div class="
       flex
       justify-center
-      align-middle
       bg-white
-      max-w-6xl
       " 
       id="form-details">
         <form action="#" method="post">
@@ -144,7 +167,7 @@
               focus:transition-colors 
               focus:outline-none 
               " 
-              type="email" className="inputField" id="email" name="email" placeholder="EMAIL">
+              type="email" className="emailInput" id="email" name="email" placeholder="EMAIL">
 
               <label class="
               absolute 
@@ -166,6 +189,7 @@
               className="input-label" for="email">
                 EMAIL:
               </label>
+              <p class="text-red-600" className="email-error"></p>
 
 	          </div>
           
@@ -296,7 +320,7 @@
           </div>
 
           <!-- Option -->
-	        <div class="m-6" id="info-items">
+	        <div class="flex m-6" id="info-items">
 	        	<label class="mr-4" for="customer-connect">Where did you hear about us? (optional):</label>
 	        	<select name="customer-connect">
 	        		
@@ -323,6 +347,6 @@
 
   </div>
 
-  <script src="../src/app.js"></script>
+  
 </body>
 </html>

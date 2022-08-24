@@ -15,6 +15,10 @@ module.exports = {
       xl: '1440px',
     },
     extend: {
+      backgroundImage: {
+        signUpBg: "url('../images/olena-sergienko-unsplash.jpg')",
+        signUpBgMobile: "url('../images/olena-sergienko-unsplash-mobile.jpg')",
+      },
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',

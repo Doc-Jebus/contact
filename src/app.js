@@ -1,13 +1,17 @@
-let label = document.querySelector('.input-label');
-            document.querySelector('.inputField')
-                .addEventListener('input', event => {
-                    let input = event.target;
+console.log("Hello World");
+    const email = document.querySelector('#email');
+    const emailError = document.querySelector('.email-error');
+    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-                    if (event.target.value) {
-                        ['border-sky-600', 'border-b-2'].forEach(c => input.classList.add(c));
-                        ['text-lg', '-top-5', 'text-sky-800'].forEach(c => label.classList.add(c));
-                    } else {
-                        ['border-sky-600', 'border-b-2'].forEach(c => input.classList.remove(c));
-                        ['text-lg', '-top-5', 'text-sky-800'].forEach(c => label.classList.remove(c));
-                    }
-                })
+let confirmation = "✓";
+let emailWarning = "Please enter a valid email address!";
+
+email.addEventListener('focusout', (e) => {
+    
+    if (e.target.value.match(validRegex)) {
+        emailError.textContent = confirmation;
+    } else {
+        emailError.textContent = emailWarning;
+    }
+})
+    
