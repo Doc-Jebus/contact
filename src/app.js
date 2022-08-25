@@ -8,6 +8,8 @@ const lastNameConfirm = document.querySelector('#last-name-confirm');
 const userName = document.querySelector('#user-name');
 const userNameConfirm = document.querySelector('#username-confirm');
 const userNameError = document.querySelector('#user-name-error');
+const password = document.querySelector('#password-input');
+const passwordConfirm = document.querySelector('#confirm-password-input');
 let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
@@ -56,16 +58,25 @@ lastName.addEventListener('focusin', ()=> {
 	return;
 	})
 
-userName.addEventListener('focusout', (e)=> {
+userName.addEventListener('focusout', ()=> {
 	let userNam = document.getElementById('user-name').value;
 	let userStr = [...userNam];
-	userStr.length >= 5 || userStr.length <= 25 ?
+	(userStr.length >= 5) && (userStr.length <= 25) ?
 	userNameConfirm.textContent = confirmCheck :
 	userNameError.textContent = userNameWarning;
 })
 
 userName.addEventListener('focusin', ()=> {
   userNameConfirm.textContent = '';
+	userNameError.textContent = '';
 	userName.textContent = '';
 	return;
+})
+
+passwordConfirm.addEventListener('focusout', ()=> {
+	let pwd = document.getElementById('password-input').value;
+	let pwdConfirm = document.getElementById('confirm-password-input').value;
+	pwdConfirm === pwd ? 
+	passwordConfirm.style.color = '#8BDB81' :
+	passwordConfirm.style.color = 'red';
 })
